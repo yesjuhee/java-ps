@@ -1,0 +1,26 @@
+package ps.solution;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class _001 {
+    public static void main(String[] args) throws IOException {
+        new _001().solution();
+    }
+
+    public void solution() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(br.readLine());
+
+        String numbers = br.readLine();
+        char[] cNumbers = numbers.toCharArray();
+        int sum = 0;
+        for (int i = 0; i < cNumbers.length; i++) {
+            sum += cNumbers[i] - '0';
+        }
+
+        System.out.print(sum);
+    }
+}
