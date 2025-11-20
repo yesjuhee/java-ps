@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class _010 {
+	
 	private int N;
 	private int L;
 	private Deque<Node> deque = new LinkedList<>();
